@@ -8,9 +8,40 @@ main {
   grid-template-columns: 1fr 5fr;
   grid-template-areas: 
   "sidebar content";
+  margin: auto;
+  max-width: 1400px;
 }
 
 main #content {
-  background-color: springgreen;
   grid-area: content;
+}
+
+main #content #videos-container {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem 0 0;
+}
+
+main #content #videos-container .video {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  gap: 1rem;
+}
+
+main #content #videos-container .video .video-info {
+  display: flex;
+  gap: 1rem;
+}
+
+main #content #videos-container .video .video-info .video-title {
+  font-weight: 900;
+}
+
+main #content #videos-container .video .video-info .video-views {
+  font-size: 12px;
+  color: rgba(81, 81, 81, 1);
 }

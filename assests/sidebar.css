@@ -4,11 +4,15 @@ main #sidebar {
   gap: 1rem;
   grid-area: sidebar;
   padding: 28px 0 0 28px;
-  min-width: 220px;
+  min-width: 200px;
 }
 
 main #sidebar .sidebar-item {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+main #sidebar .sidebar-item span {
+  font-size: 14px;
 }
