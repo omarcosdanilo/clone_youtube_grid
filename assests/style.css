@@ -1,0 +1,20 @@
+@import url(./reset.css);
+@import url(./header.css);
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 
+  "sidebar content";
+}
+
+
+main #sidebar {
+  background-color: palevioletred;
+  grid-area: sidebar;
+}
+
+main #content {
+  background-color: springgreen;
+  grid-area: content;
+}
