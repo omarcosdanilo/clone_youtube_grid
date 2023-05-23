@@ -1,17 +1,13 @@
 @import url(./reset.css);
 @import url(./header.css);
+@import url(./sidebar.css);
 
 main {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas: 
   "sidebar content";
-}
-
-
-main #sidebar {
-  background-color: palevioletred;
-  grid-area: sidebar;
 }
 
 main #content {

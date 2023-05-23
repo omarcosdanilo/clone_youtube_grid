@@ -5,7 +5,6 @@ header nav {
   display: grid;
   width: 100%;
   padding: .75rem;
-  border-bottom: 1px solid ;
   grid-template-columns: 1fr 3fr 1fr;
   justify-content: center;
 }
